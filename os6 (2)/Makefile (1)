@@ -1,0 +1,9 @@
+all: control comands
+ 
+control:
+	g++ control.cpp -lzmq -o control 
+ 
+comands:
+	g++ count.cpp -lzmq -o count 
+clean:
+	rm -rf control count
